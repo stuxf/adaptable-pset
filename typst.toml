@@ -1,17 +1,15 @@
 # for a description of available keys, see https://github.com/typst/packages/?tab=readme-ov-file#package-format
 
 [package]
-name = ""
+name = "adaptable-pset"
 version = "0.1.0"
 entrypoint = "src/lib.typ"
-authors = []
+authors = ["Stephen Xu <https://stuxf.dev>"]
 license = "Unlicense"
-description = ""
-homepage = ""
-repository = ""
-keywords = []
-categories = []
-disciplines = []
+description = "A flexible problem set template, perfect for technical courses."
+repository = "https://github.com/stuxf/adaptable-pset"
+keywords = ["pset", "problem set", "assignment", "homework", "academic"]
+categories = ["report"]
 # compiler = ""
 exclude = [
   ".github",
@@ -24,10 +22,7 @@ exclude = [
   "thumbnail-light.svg",
 ]
 
-# [template]
-# path = "template"
-# entrypoint = "main.typ"
-# thumbnail = "thumbnail.png"
-
-# [tool.mytool]
-# foo = "bar"
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"

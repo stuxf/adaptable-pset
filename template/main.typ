@@ -1,29 +1,3 @@
-# The `adaptable-pset` Package
-<div align="center">Version 0.1.0</div>
-
-This is an easy to use template that can be used to submit school assignments and problem sets. Originally intended for math homeworks, it works great for other subjects like physics and computer science as well. Heavily inspired by [gRox167's now outdated template](https://github.com/gRox167/typst-assignment-template/tree/main), and modernized to take advantage of [showybox](https://typst.app/universe/package/showybox). I've been personally using this template for quite some time, and also shared it among friends and friends of friends to convert to Typst, so I figured it'd be good to make this template publicly available.
-
-## Showcase
-
-For a more in-depth example, check out this [example pdf](https://github.com/stuxf/adaptable-pset/example.pdf):
-
-### Cover Page
-
-![Example cover page](https://raw.githubusercontent.com/stuxf/adaptable-pset/main/example_cover.png)
-
-### Example problem
-
-![Example problem](https://raw.githubusercontent.com/stuxf/adaptable-pset/main/example_problem.png)
-
-## Quick start
-
-Click [here](https://typst.app/app?template=adaptable-pset&version=0.1.0) to get started, or click the "Create project in app" link on the typst universe link to get started easily with this template on the typst webapp.
-
-## Starter code
-
-You can use this to get started, or just use the quick start above for a more detailed template on the webapp
-
-```typ
 #import "@preview/adaptable-pset:0.1.0": *
 
 // Feel free to omit any of the below, just set it to "" and it won't show
@@ -49,16 +23,32 @@ You can use this to get started, or just use the quick start above for a more de
   // paper-size: "A4", 
 )
 
-// Numbering
-#set enum(numbering: "a)")
-
 // Enable to get a latex-like look
 // #set text(font: "New Computer Modern")
+
+// Set Numbering (optional)
+#set enum(numbering: "a)")
+
+/*=================================
+  Packages you may want to enable
+=================================*/
+
+// #import "@preview/quick-maths:0.2.0": shorthands
+// #show: shorthands.with(
+//   ($|=$, math.tack.double),
+// )
+
+// #import "@preview/diverential:0.2.0": *
+// #import "@preview/physica:0.9.4": *
+
+// #import "@preview/codly:1.2.0": *
+// #import "@preview/codly-languages:0.1.8": *
+// #codly(languages: codly-languages)
+// #show: codly-init
 
 // #prob(title: "", color: green)[content goes here]
 // Default color is green, can be changed to black if you want to print
 // Note that title is optional, it can be removed if you just don't set it to anything (just do #prob[content])
-
 #prob(title: "24.3.7")[
   Let $alpha = sqrt(2+sqrt(2)) in CC$.
   1. Compute $f = min_QQ (alpha)$.
@@ -78,13 +68,13 @@ You can use this to get started, or just use the quick start above for a more de
 
 // Generally good to have a pagebreak between new problems
 #pagebreak(weak: true)
-```
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">
-  <img src="./thumbnail-light.svg">
-</picture>
+#prob(title:"New Problem")[
+  Content 1 from part 1
+][
+  Content 2 from part 2
+]
 
-## Appendix
+1. Answering question posed from part 1.
 
-* `#problem` is just a wrapper to showybox, for more information I reccomend checking their [documentation](https://typst.app/universe/package/showybox). 
+2. Answering question posed from part 2.
