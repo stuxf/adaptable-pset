@@ -3,6 +3,10 @@
 
 This is an easy to use template that can be used to submit school assignments and problem sets. Originally intended for math homeworks, it works great for other subjects like physics and computer science as well. Heavily inspired by [gRox167's now outdated template](https://github.com/gRox167/typst-assignment-template/tree/main), and modernized to take advantage of [showybox](https://typst.app/universe/package/showybox). I've been personally using this template for quite some time, and also shared it among friends and friends of friends to convert to Typst, so I figured it'd be good to make this template publicly available.
 
+## Quick start
+
+Click [here](https://typst.app/app?template=adaptable-pset&version=0.1.0) to get started, or click the "Create project in app" link on the typst universe link to get started easily with this template on the typst webapp.
+
 ## Showcase
 
 For a more in-depth example, check out this [example pdf](https://github.com/stuxf/adaptable-pset/example.pdf):
@@ -14,10 +18,6 @@ For a more in-depth example, check out this [example pdf](https://github.com/stu
 ### Example problem
 
 ![Example problem](https://raw.githubusercontent.com/stuxf/adaptable-pset/main/example_problem.png)
-
-## Quick start
-
-Click [here](https://typst.app/app?template=adaptable-pset&version=0.1.0) to get started, or click the "Create project in app" link on the typst universe link to get started easily with this template on the typst webapp.
 
 ## Starter code
 
@@ -79,11 +79,11 @@ You can use this to get started, or just use the quick start above for a more de
 // Generally good to have a pagebreak between new problems
 #pagebreak(weak: true)
 ```
-
+<!-- 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">
   <img src="./thumbnail-light.svg">
-</picture>
+</picture> -->
 
 ## Appendix
 
