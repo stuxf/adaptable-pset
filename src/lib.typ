@@ -28,12 +28,13 @@
   semester: "Summer 1970",
   due-time: "Feb 29, 23:59",
   accent-color: rgb("#000000"),
+  paper-size: "us-letter",
   body,
 ) = {
   // Document Metadata
   set document(title: title, author: author)
 
-  set page(paper: "us-letter")
+  set page(paper: paper-size)
 
   // Cover Page (centered vert + horiz)
   align(center + horizon)[
