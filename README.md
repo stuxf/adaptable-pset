@@ -46,7 +46,7 @@ You can use this to get started, or just use the quick start above for a more de
 
   // Optional setting to change the paper size depending on region
   // (Defaults to us-letter)
-  // paper-size: "A4", 
+  // paper-size: "a4", 
 )
 
 // Numbering
