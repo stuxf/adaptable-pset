@@ -1,5 +1,5 @@
 # The `adaptable-pset` Package
-<div align="center">Version 0.1.1</div>
+<div align="center">Version 0.2.0</div>
 
 This is an easy to use template that can be used to submit school assignments and problem sets. Originally intended for math homeworks, it works great for other subjects like physics and computer science as well. Heavily inspired by [gRox167's now outdated template](https://github.com/gRox167/typst-assignment-template/tree/main), and modernized to take advantage of [showybox](https://typst.app/universe/package/showybox). I've been personally using this template for quite some time, and also shared it among friends and friends of friends to convert to Typst, so I figured it'd be good to make this template publicly available.
 
@@ -24,7 +24,7 @@ For a more in-depth example, check out this [example pdf](https://github.com/stu
 You can use this to get started, or just use the quick start above for a more detailed template on the webapp
 
 ```typ
-#import "@preview/adaptable-pset:0.1.1": *
+#import "@preview/adaptable-pset:0.2.0": *
 
 // Feel free to omit any of the below, just set it to "" and it won't show
 #let title = "HW5f"
@@ -45,8 +45,8 @@ You can use this to get started, or just use the quick start above for a more de
   due-time: due-time,
 
   // Optional setting to change the paper size depending on region
-  // (Defaults to us-letter)
-  // paper-size: "a4", 
+  // (Defaults to A4)
+  // paper-size: "us-letter", 
 )
 
 // Numbering

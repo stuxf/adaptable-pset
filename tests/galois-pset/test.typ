@@ -17,6 +17,7 @@
   instructor: instructor,
   semester: semester,
   due-time: due-time,
+  paper-size: "us-letter"
 )
 
 #prob(title: "24.1.17")[

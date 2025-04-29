@@ -1,4 +1,4 @@
-#import "@preview/adaptable-pset:0.1.1": *
+#import "@preview/adaptable-pset:0.2.0": *
 
 // Feel free to omit any of the below, just set it to "" and it won't show
 #let title = "HW5f"
