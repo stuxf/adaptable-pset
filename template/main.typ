@@ -19,8 +19,8 @@
   due-time: due-time,
 
   // Optional setting to change the paper size depending on region
-  // (Defaults to us-letter)
-  // paper-size: "A4", 
+  // (Defaults to A4)
+  // paper-size: "us-letter", 
 )
 
 // Enable to get a latex-like look
